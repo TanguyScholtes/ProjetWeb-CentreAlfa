@@ -1,0 +1,29 @@
+.left-column{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: $logoColor;
+    color: $txtWhite;
+}
+
+.side__menu__list{
+    padding: 1em;
+    list-style-type: none;
+    font-size: 0.85em;
+}
+
+.side__menu__underlist, .side__menu__list--second{
+    padding-left: 2em;
+}
+
+.side__menu__list__item, .side__menu__underlist__item, .side__menu__list__item--second{
+    padding: 0.5em 0;
+}
+
+.side__menu__list__link, .side__menu__underlist__link, .side__menu__list__link--second{
+    text-decoration: none;
+    color: $txtWhite;
+    &:hover{
+        background-color: lighten($logoColor, 15%);
+    }
+}

@@ -1,0 +1,75 @@
+/*-----------SETTINGS------------*/
+//Default values & breakpoints
+
+html{
+    font-size: 16px;
+}
+
+
+/*------------TOOLS------------*/
+//Mixins, variables & functions
+
+@import "tools-colors";
+
+
+/*------------GENERIC-----------*/
+//Basic definitions for generic elements
+
+@import "normalize";
+@import "boilerplate";
+
+
+/*------------BASE------------*/
+//Low-specificity rules for your particular project
+
+body {
+	position: relative;
+	font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    margin-bottom: 1em;
+	width: 100%;
+}
+
+.main__wrapper{
+    padding-top: 3em;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.hidden{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+/*------------OBJECTS------------*/
+//Structure, location and behaviour of repeating sections in your pages
+
+@import "objects-top__menu";
+@import "objects-side__menu";
+
+
+
+/*------------COMPONENTS------------*/
+//Aspects of those repeating sections
+
+@import "components-top__menu";
+@import "components-side__menu";
+
+
+
+/*------------TRUMPS-------------*/
+//Rules you want to win in every situation
+
